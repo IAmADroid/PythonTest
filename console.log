@@ -1,66 +1,18 @@
-funny@DESKTOP-4G1T2DT ~
-$ python3
-Python 3.6.9 (default, Jul 21 2019, 14:33:59)
-[GCC 7.4.0] on cygwin
-Type "help", "copyright", "credits" or "license" for more information.
->>> def fun():
-...    yield 1
-...    yield 2
-...    yield 3
-...
->>> def caller():
-...    print ('First value printing')
-...    print (fun())
-...    print ('Second value printing')
-...    print (fun())
-...    print ('Third value printing')
-...    print (fun())
-...
->>> caller()
+funny@DESKTOP-4G1T2DT ~/git/PythonTest
+$ python3 pythonYield.py
 First value printing
-<generator object fun at 0x6fffffe79468>
+<generator object fun at 0x6fffffe39308>
 Second value printing
-<generator object fun at 0x6fffffe79468>
+<generator object fun at 0x6fffffe39308>
 Third value printing
-<generator object fun at 0x6fffffe79468>
->>> quit()
+<generator object fun at 0x6fffffe39308>
 
-funny@DESKTOP-4G1T2DT ~
-$ python2
-Python 2.7.16 (default, Mar 20 2019, 12:15:19)
-[GCC 7.4.0] on cygwin
-Type "help", "copyright", "credits" or "license" for more information.
->>> def fun():
-   yield 3...    yield 1
-...    yield 2
-...    yield 3
-...
->>> quit()
-
-funny@DESKTOP-4G1T2DT ~
-$ python2
-Python 2.7.16 (default, Mar 20 2019, 12:15:19)
-[GCC 7.4.0] on cygwin
-Type "help", "copyright", "credits" or "license" for more information.
->>> def fun():
-...    yield 1
-...    yield 2
-...    yield 3
-...
->>> def caller():
-...    print ('First value printing')
-...    print (fun())
-...    print ('Second value printing')
-...    print (fun())
-...    print ('Third value printing')
-...    print (fun())
-...
->>> caller()
+funny@DESKTOP-4G1T2DT ~/git/PythonTest
+$ python2 pythonYield.py
 First value printing
 <generator object fun at 0x6fffffe5f640>
 Second value printing
 <generator object fun at 0x6fffffe5f640>
 Third value printing
 <generator object fun at 0x6fffffe5f640>
->>>
 
